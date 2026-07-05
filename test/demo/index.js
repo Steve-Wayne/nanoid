@@ -78,7 +78,9 @@ let tasks = [
   () => printDistr('nanoid/non-secure', () => nonSecure()),
   () =>
     printDistr('random % alphabet', () => {
-      return [...random(LENGTH)].map(i => ALPHABET[i % ALPHABET.length])
+      // AI FIX START
+return [...random(LENGTH)].map(i => ALPHABET[i % ALPHABET.length])
+// AI FIX END
     })
 ]
 
